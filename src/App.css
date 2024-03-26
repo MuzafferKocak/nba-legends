@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Tauri&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(40, 105, 90, 0.538);
+}
+
+.container {
+  /* border: 2px solid red; */
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 80%;
+  margin: 20px auto;
+  padding: 15px;
+  background-image: url(./assets/img/NBA_headpic.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: 0px 15px 55px;
+}
+.player {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 250px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.1rem;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+    /* border: 2px solid red; */
+    transition: all 0.7s;
+    transform: translate(0);
+    object-fit: cover;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  img:hover {
+    transform: scale(0.9);
+    cursor: pointer;
+    border: 2px solid white;
+  }
+  .name {
+    /* border: 2px solid yellow; */
+    width: 100%;
+    height: 40px;
+    /* border-radius: 0px 0px 0px 0px; */
+    background-color: white;
+    text-align: center;
+    padding: 10px;
+  }
+
+  h3 {
+    /* border: 2px solid white; */
+    font-size: 1rem;
+    color: rgb(70, 2, 2);
+    font-family: "Tauri", sans-serif;
+  }
+}
+.searchPlayer {
+  width: 100%;
+
+  input {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-family: "Tauri", sans-serif;
+    font-size: 1rem;
+    border: 2px solid;
+    width: 580px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(207, 211, 211);
+    
+  }
+}
+
+.info {
+  /* border: 2px solid red; */
+  width: 100%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 2rem;
+  background-color: white;
+  border-radius: 10px 10px 0 0;
+  font-size: 1.2rem;
+
+  li  {
+    list-style: none;
+    
+  }
+}
